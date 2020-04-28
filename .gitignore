@@ -4,3 +4,5 @@ settings.json
 .vscode
 array.py
 errors.py
+__pycache__
+.idea
