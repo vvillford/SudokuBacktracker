@@ -29,7 +29,7 @@ def solve(puzzle):
 
       if solve(puzzle):
         return True
-      
+      puzzle.currentlocation = row, column
       puzzle.array[row][column] = 0
   return False
 
