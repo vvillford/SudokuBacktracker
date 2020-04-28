@@ -28,7 +28,7 @@ class Sudoku:
     column_start = column - column % 3
     for j in range(row_start, row_start + 3):
       for i in range(column_start, column_start + 3):
-        if self.array[j][i] == number and (i, j) != self.currentlocation:
+        if self.array[j][i] == number and (j, i) != self.currentlocation:
           return False
     
     # if all tests pass, return True
