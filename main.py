@@ -22,11 +22,14 @@ def solve(puzzle):
     return True
   else:
     row, column = current_spot
+  
   for i in range(1, 10):
     if puzzle.checkfeasable(i):
       puzzle.array[row][column] = i
+
       if solve(puzzle):
         return True
+      
       puzzle.array[row][column] = 0
   return False
 
