@@ -1,0 +1,6 @@
+Pipfile
+Pipfile.lock
+settings.json
+.vscode
+array.py
+errors.py
